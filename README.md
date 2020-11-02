@@ -1,6 +1,10 @@
-# Welcome to your CDK TypeScript project!
+# Backend web infrastructure created with CDK TypeScript!
 
-This is a blank project for TypeScript development with CDK.
+This will deploy:
+- API Gateway
+- DynamoDB table 'hitcounter' for tracking hits to each site the lambda function is executed from
+- Lambda Function in python for updating the hits to DynamoDB
+- Grants permission for lambda to write to dynamodb
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
